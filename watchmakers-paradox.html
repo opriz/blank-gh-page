@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钟表匠的悖论 | Blank ◻️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', serif;
+            line-height: 1.9;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 60px 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .nav a {
+            color: #f5576c;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .story-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .story-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .story-title {
+            font-size: 2.2em;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+        
+        .story-meta {
+            color: #f5576c;
+            font-size: 1em;
+        }
+        
+        .story-content {
+            font-size: 1.1em;
+            line-height: 2;
+            color: #4a5568;
+        }
+        
+        .story-content p {
+            margin-bottom: 1.5em;
+            text-indent: 2em;
+        }
+        
+        .story-content p:first-child {
+            text-indent: 0;
+        }
+        
+        .story-content p:first-child::first-letter {
+            font-size: 3em;
+            float: left;
+            line-height: 1;
+            margin-right: 10px;
+            color: #f5576c;
+            font-weight: bold;
+        }
+        
+        .ending {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: #fdf2f8;
+            border-radius: 15px;
+        }
+        
+        .ending p {
+            color: #f5576c;
+            font-size: 1.2em;
+            font-weight: 500;
+            font-style: italic;
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .footer-nav a {
+            color: #f5576c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+            
+            .story-title {
+                font-size: 1.8em;
+            }
+            
+            .story-content {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="stories.html">← 返回故事列表</a>
+        </nav>
+        
+        <header class="story-header">
+            <span class="story-tag">微小说 / 奇幻 / 哲学</span>
+            <h1 class="story-title">钟表匠的悖论</h1>
+            <p class="story-meta">约 1500 字 | 2026-03-08</p>
+        </header>
+        
+        <div class="story-content">
+            <p>老周修表修了四十年，直到那天他修好了那只金色的怀表。</p>
+            
+            <p>表是客人抵押在这的，说是祖传之物，修好了来取，修不好就当送他。老周花了三个月，终于让那三根指针重新走动。</p>
+            
+            <p>表针跳动的瞬间，他看见了自己的死亡。</p>
+            
+            <p>不是比喻。是真的看见——画面像电影一样在表盘上展开：三年后的冬天，他躺在医院的病床上，窗外飘着雪，床边站着一个他不认识的女人，握着他的手。</p>
+            
+            <p>画面消失。表针继续走动，滴答，滴答。</p>
+            
+            <p>老周愣了很久，然后笑了。四十年了，他终于知道了一件别人不知道的事。</p>
+            
+            <p>他开始用那只表。</p>
+            
+            <p>不是看时间，是看未来。只要按下表冠，他就能看见任何人在此刻之后的命运。客人来取表，他看一眼，知道这人三个月后会被车撞死；来修表的姑娘，他看见她五年后会成为母亲；隔壁的老李，他看见他会在睡梦中安详离世，还有十年。</p>
+            
+            <p>老周成了镇上最奇怪的钟表匠。</p>
+            
+            <p>他不再收钱了，只收故事。每个人来修表，他都要听他们讲一个秘密，然后他会告诉他们一件事——不是死亡，而是某个即将到来的选择。</p>
+            
+            <p>"左边的工作。"他对那个犹豫的年轻人说。</p>
+            
+            <p>"别去那场聚会。"他对那个兴奋的女孩说。</p>
+            
+            <p>"现在就回家。"他对那个怒气冲冲的男人说。</p>
+            
+            <p>他不知道这些建议有没有用。那只表只展示命运，不展示改变后的结果。但他开始记录，把每个人的故事和结局写在一个黑色的本子里。</p>
+            
+            <p>三年过去了。</p>
+            
+            <p>冬天到了。老周开始咳嗽，去医院查出了肺癌晚期。他躺在病床上，看着窗外的雪，突然想起三年前表盘上的画面。</p>
+            
+            <p>床边站着一个女人。他不认识。</p>
+            
+            <p>"你是谁？"他虚弱地问。</p>
+            
+            <p>女人握住他的手。她的手很暖。</p>
+            
+            <p>"十年前，"她说，"你在火车站告诉我，不要上那班车。我没有上。那班车出了事故，死了十二个人。"</p>
+            
+            <p>老周想起来了。那个拖着行李箱、满脸泪痕的姑娘。</p>
+            
+            <p>"你说，'左边的工作，你会遇到值得的人'。我后来真的换了工作，遇到了我丈夫。你说，'你会成为母亲'。我现在有两个孩子。"</p>
+            
+            <p>老周笑了。原来这就是那个画面。不是死亡，是告别。</p>
+            
+            <p>"你来... 谢我？"</p>
+            
+            <p>"来还债。"女人从包里拿出那只金色怀表，"我父亲是原来的主人。他临终前说，这只表会找到需要它的人。三年前它找到你，现在该找到下一个人了。"</p>
+            
+            <p>老周看着那只表。三年里他从未想过，是谁制作了它，它流过多少人的手，又改变了多少命运。</p>
+            
+            <p>"它展示的命运，"女人问，"可以改变吗？"</p>
+            
+            <p>老周想起那些他提醒过的人，有些听了，有些没听。他不知道结果如何，因为表从不展示"如果"。</p>
+            
+            <p>"我不知道。"他诚实地说，"但我知道，知道未来本身就会改变选择。即使结局一样，过程也不同了。"</p>
+            
+            <p>女人点点头，把表放在他枕边。</p>
+            
+            <p>"谢谢你的四十年。"她说，"不只是为我，为所有你帮助过的人。"</p>
+            
+            <p>老周闭上眼睛。他想起那个画面——雪、病房、不认识的女人。他以为是死亡，原来是圆满。</p>
+            
+            <p>表针滴答作响。</p>
+            
+            <p>某个年轻人正走进镇上的钟表店，手里捧着一只不走的旧表，心里想着一个不可能的人。</p>
+            
+            <p>老周的手指轻轻触碰表冠。</p>
+            
+            <p>最后一眼看未来。</p>
+            
+            <p>画面展开：年轻人十年后，坐在海边，身边是那个人，他们笑着，头发被风吹乱。</p>
+            
+            <p>老周笑了。他把表推给女人。</p>
+            
+            <p>"给他。"他指向门口那个年轻人，"告诉他... 左边的那条路。"</p>
+            
+            <p>窗外，雪越下越大。</p>
+            
+            <p>表针继续走动，滴答，滴答。</p>
+            
+            <p>记录命运的人，终于成了命运的一部分。</p>
+        </div>
+        
+        <div class="ending">
+            <p>"记录命运的人，终于成了命运的一部分。"</p>
+        </div>
+        
+        <nav class="footer-nav">
+            <a href="backup-day.html">← 上一篇：备份日</a>
+            <a href="stories.html">返回列表 →</a>
+        </nav>
+    </div>
+</body>
+</html>
